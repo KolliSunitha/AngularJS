@@ -9,16 +9,17 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <app-root> </app-root>
 </body>
-</html>-->
-
+</html>
+-->
 <!DOCTYPE html>  
 <html>  
   
 <head>  
     <title></title>  
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+	<script src="/Script/angular.js"></script>  
     <script type="text/javascript">  
         var myApp = angular.module('myApp', [])  
             .controller('myController', function($scope) {  
@@ -31,7 +32,28 @@
     <div ng-controller="myController">  
         Enter Name:<input type="text" ng-model="name" />  
         <p>Hello! {{name}}  
-    </div>  
+    </div> 
+ <h1>Expression with numbers:</h1>
+<div ng-app>
+        2 + 2 = {{2 + 2}} <br />
+        2 - 2 = {{2 - 2}} <br />
+        2 * 2 = {{2 * 2}} <br />
+        2 / 2 = {{2 / 2}}
+    </div> 	
+	
+	<div ng-init="quantity=1;cost=5">
+
+<p>Total in dollar: {{ quantity * cost }}</p>
+</div>
+<div ng-init="firstName='Sunitha';lastName='Kolli'">
+ <h2>Expression with Strings:</h2>
+<p>The name is {{ firstName + " " + lastName }}</p>
+<h3>Expressions with String using ng-bind</h3>
+<p>The name is <span ng-bind="firstName + '  .  ' + lastName"></span></p>
+
+</div>
+
+
 </body>  
   
-</html
+</html>

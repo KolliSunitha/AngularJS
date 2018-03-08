@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <script src="/Scripts/angular.js"></script>
+</head>
+<body >
+<div ng-init="firstName='Sunitha';lastName='Kolli'">
+ <h2>Expression with Strings:</h2>
+<p>The name is {{ firstName + " " + lastName }}</p>
+
+<h3>Expressions with String using ng-bind</h3>
+
+
+<p>The name is <span ng-bind="firstName + ' -- ' + lastName"></span></p>
+
+</div>
+</body>
+</html>  
+    
